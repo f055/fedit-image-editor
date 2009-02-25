@@ -1,0 +1,490 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#define APSTUDIO_HIDDEN_SYMBOLS
+#include "windows.h"
+#undef APSTUDIO_HIDDEN_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Polish resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_PLK)
+#ifdef _WIN32
+LANGUAGE LANG_POLISH, SUBLANG_DEFAULT
+#pragma code_page(1250)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_FIEW                ICON                    "Fedit.ico"
+IDI_SMALL               ICON                    "small.ico"
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#define APSTUDIO_HIDDEN_SYMBOLS\r\n"
+    "#include ""windows.h""\r\n"
+    "#undef APSTUDIO_HIDDEN_SYMBOLS\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,6
+ PRODUCTVERSION 1,0,0,6
+ FILEFLAGSMASK 0x17L
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "041504b0"
+        BEGIN
+            VALUE "CompanyName", "www.fapplication.org"
+            VALUE "FileDescription", "Fedit Image Editor"
+            VALUE "FileVersion", "1, 0, 0, 6"
+            VALUE "InternalName", "Fedit"
+            VALUE "LegalCopyright", "Copyright (C) 2007 Marek Foss"
+            VALUE "OriginalFilename", "Fedit.exe"
+            VALUE "ProductName", "Fedit"
+            VALUE "ProductVersion", "1, 0, 0, 6"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x415, 1200
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MENU MENU 
+BEGIN
+    POPUP "File"
+    BEGIN
+        MENUITEM "New...\tCtrl+N",              ID_FILE_NEW
+        MENUITEM "Open...\tCtrl+O",             ID_FILE_OPEN
+        MENUITEM "Open Folder...\tCtrl+Shift+O", ID_FILE_OPENFOLDER
+        MENUITEM SEPARATOR
+        MENUITEM "Save\tCtrl+S",                ID_FILE_SAVE
+        MENUITEM "Save As...\tCtrl+Shift+S",    ID_FILE_SAVEAS
+        MENUITEM "Close",                       ID_FILE_CLOSE, GRAYED
+        MENUITEM "Close All",                   ID_FILE_CLOSEALL
+        MENUITEM SEPARATOR
+        MENUITEM "Exit\tCtrl+Q",                ID_FILE_EXIT
+    END
+    POPUP "Edit"
+    BEGIN
+        MENUITEM "Undo\tCtrl+Z",                ID_EDIT_UNDO
+        MENUITEM "Redo\tCtrl+Y",                ID_EDIT_REDO
+        MENUITEM SEPARATOR
+        MENUITEM "Cut\tCtrl+X",                 ID_EDIT_CUT
+        MENUITEM "Copy\tCtrl+C",                ID_EDIT_COPY
+        MENUITEM "Copy Merged\tCtrl+Shift+C",   ID_EDIT_COPYMERGED
+        MENUITEM "Paste\tCtrl+V",               ID_EDIT_PASTE
+        MENUITEM "Clear",                       ID_EDIT_CLEAR
+    END
+    POPUP "Image"
+    BEGIN
+        MENUITEM "Image and Canvas Size...",    ID_IMAGE_IMAGESIZE
+    END
+    POPUP "Layer"
+    BEGIN
+        MENUITEM "Add",                         ID_LAYER_ADD
+        MENUITEM "Delete",                      ID_LAYER_DELETE
+        MENUITEM SEPARATOR
+        MENUITEM "Move Up",                     ID_LAYER_MOVEUP
+        MENUITEM "Move Down",                   ID_LAYER_MOVEDOWN
+        MENUITEM SEPARATOR
+        MENUITEM "Merge Down\tCtrl+E",          ID_LAYER_MERGEDOWN
+        MENUITEM "Rasterize\tCtrl+R",           ID_LAYER_RASTER
+        MENUITEM "Edit Text\tCtrl+T",           ID_LAYER_EDITTEXT
+        MENUITEM SEPARATOR
+        MENUITEM "Visible",                     ID_LAYER_VISIBLE
+        MENUITEM "Locked",                      ID_LAYER_LOCKED
+    END
+    POPUP "Select"
+    BEGIN
+        MENUITEM "Select All\tCltr+A",          ID_SELECT_SELECTALL
+        MENUITEM "Deselect\tEsc",               ID_SELECT_DESELECT
+    END
+    POPUP "Filter"
+    BEGIN
+        MENUITEM "Last Filter\tCtrl+L",         ID_FILTER_LASTFILTER
+        MENUITEM SEPARATOR
+        MENUITEM "Blur...",                     ID_FILTER_BLUR
+        MENUITEM "Defocus...",                  ID_FILTER_DEFOCUS
+        MENUITEM "Gaussian Blur...",            ID_FILTER_GAUSSIANBLUR
+        MENUITEM "Sharpen...",                  ID_FILTER_SHARPEN
+        MENUITEM "Edge Trace...",               ID_FILTER_EDGETRACE
+        POPUP "Emboss"
+        BEGIN
+            MENUITEM "East...",                     ID_EMBOSS_EAST
+            MENUITEM "South...",                    ID_EMBOSS_SOUTH
+        END
+        MENUITEM "Highlight...",                ID_FILTER_HIGHLIGHT
+        MENUITEM "Old Stone...",                ID_FILTER_OLDSTONE
+        MENUITEM SEPARATOR
+        MENUITEM "Custom...",                   ID_FILTER_CUSTOM
+    END
+    POPUP "Window"
+    BEGIN
+        MENUITEM "Tile Horizontally",           ID_WINDOW_TILEHORIZONTALLY
+        MENUITEM "Tile Vertically",             ID_WINDOW_TILEVERTICALLY
+        MENUITEM "Cascade",                     ID_WINDOW_CASCADE
+        MENUITEM "Arrange",                     ID_WINDOW_ARRANGE
+        MENUITEM SEPARATOR
+        MENUITEM "Fullscreen\tCtrl+F",          ID_VIEW_FULLSCREEN
+        MENUITEM SEPARATOR
+        MENUITEM "Info\tAlt+I",                 ID_WINDOW_SHOWINFO
+        MENUITEM "Layers\tAlt+L",               ID_WINDOW_SHOWLAYERS
+        MENUITEM "History\tAlt+H",              ID_WINDOW_SHOWHISTORY
+    END
+    POPUP "Help"
+    BEGIN
+        MENUITEM "About Fedit...\tCtrl+?",      ID_HELP_ABOUTFIEW
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_ACCELERATORS ACCELERATORS 
+BEGIN
+    "C",            ID_EDIT_COPY,           VIRTKEY, CONTROL, NOINVERT
+    "C",            ID_EDIT_COPYMERGED,     VIRTKEY, SHIFT, CONTROL, NOINVERT
+    "X",            ID_EDIT_CUT,            VIRTKEY, CONTROL, NOINVERT
+    "V",            ID_EDIT_PASTE,          VIRTKEY, CONTROL, NOINVERT
+    "Y",            ID_EDIT_REDO,           VIRTKEY, CONTROL, NOINVERT
+    "Z",            ID_EDIT_UNDO,           VIRTKEY, CONTROL, NOINVERT
+    "Q",            ID_FILE_EXIT,           VIRTKEY, CONTROL, NOINVERT
+    "N",            ID_FILE_NEW,            VIRTKEY, CONTROL, NOINVERT
+    "O",            ID_FILE_OPEN,           VIRTKEY, CONTROL, NOINVERT
+    "O",            ID_FILE_OPENFOLDER,     VIRTKEY, SHIFT, CONTROL, NOINVERT
+    "S",            ID_FILE_SAVE,           VIRTKEY, CONTROL, NOINVERT
+    "S",            ID_FILE_SAVEAS,         VIRTKEY, SHIFT, CONTROL, NOINVERT
+    "S",            ID_FILE_SAVEOPTIMIZED,  VIRTKEY, SHIFT, CONTROL, ALT, NOINVERT
+    "L",            ID_FILTER_LASTFILTER,   VIRTKEY, CONTROL, NOINVERT
+    VK_OEM_2,       ID_HELP_ABOUTFIEW,      VIRTKEY, CONTROL, NOINVERT
+    "E",            ID_LAYER_MERGEDOWN,     VIRTKEY, CONTROL, NOINVERT
+    "R",            ID_LAYER_RASTER,        VIRTKEY, CONTROL, NOINVERT
+    VK_ESCAPE,      ID_SELECT_DESELECT,     VIRTKEY, NOINVERT
+    "A",            ID_SELECT_SELECTALL,    VIRTKEY, CONTROL, NOINVERT
+    "F",            ID_VIEW_FULLSCREEN,     VIRTKEY, CONTROL, NOINVERT
+    "H",            ID_WINDOW_SHOWHISTORY,  VIRTKEY, ALT, NOINVERT
+    "I",            ID_WINDOW_SHOWINFO,     VIRTKEY, ALT, NOINVERT
+    "L",            ID_WINDOW_SHOWLAYERS,   VIRTKEY, ALT, NOINVERT
+    "T",            ID_LAYER_EDITTEXT,      VIRTKEY, CONTROL, NOINVERT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// PNG
+//
+
+IDR_ABOUT               PNG                     "ovl_about.png"
+ICC_SELVER              PNG                     "Icos\\select_vert.png"
+ICC_CRO                 PNG                     "Icos\\crop.png"
+ICC_DRAPEN              PNG                     "Icos\\draw_pen.png"
+ICC_MOV                 PNG                     "Icos\\move.png"
+ICC_SELCIR              PNG                     "Icos\\select_circ.png"
+ICC_SELHOR              PNG                     "Icos\\select_hori.png"
+ICC_SELREC              PNG                     "Icos\\select_rect.png"
+ICC_ZOO                 PNG                     "Icos\\zoom.png"
+ICC_ERSNOR              PNG                     "Icos\\eraser_normal.png"
+ICC_FILBUC              PNG                     "Icos\\fill_bucket.png"
+ICC_HAN                 PNG                     "Icos\\hand.png"
+ICC_LASPOL              PNG                     "Icos\\lasso_poly.png"
+ICC_MAG                 PNG                     "Icos\\magicwand.png"
+ICC_SMPCOL              PNG                     "Icos\\sample_color.png"
+ICC_SHALIN              PNG                     "Icos\\shape_line.png"
+ICC_TEX                 PNG                     "Icos\\text.png"
+ICC_VECDRA              PNG                     "Icos\\vector_draw.png"
+ICC_VECSEL              PNG                     "Icos\\vector_select.png"
+IDC_TXTULN              PNG                     "Icos\\dock_text_uline.png"
+IDC_TXTBLD              PNG                     "Icos\\dock_text_bold.png"
+IDC_TXTITA              PNG                     "Icos\\dock_text_italic.png"
+ITC_NEW                 PNG                     "Icos\\ico_newfile.png"
+ICC_COLRES              PNG                     "Icos\\color_reset.png"
+ICC_COLSWA              PNG                     "Icos\\color_swap.png"
+ITC_DEL                 PNG                     "Icos\\ico_delete.png"
+ITC_DOWN                PNG                     "Icos\\ico_down.png"
+ITC_UP                  PNG                     "Icos\\ico_up.png"
+ICC_SHARRC              PNG                     "Icos\\shape_roundrect.png"
+ICC_SHACIR              PNG                     "Icos\\shape_elli.png"
+ICC_SHAREC              PNG                     "Icos\\shape_rect.png"
+ICC_LASMOS              PNG                     "Icos\\lasso_mouse.png"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DLL
+//
+
+IDR_DLLRAR              DLL                     "unrar.dll"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_NEW DIALOGEX 0, 0, 343, 129
+STYLE DS_SYSMODAL | DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | DS_CENTER | WS_POPUP | WS_VISIBLE | WS_CAPTION
+EXSTYLE WS_EX_TOOLWINDOW | WS_EX_WINDOWEDGE
+CAPTION "New"
+FONT 8, "MS Shell Dlg", 0, 0, 0x0
+BEGIN
+    EDITTEXT        IDC_EDIT_NAME,120,7,128,13,ES_AUTOHSCROLL
+    RTEXT           "Name:",IDC_STATIC,7,7,109,12,SS_CENTERIMAGE,WS_EX_TRANSPARENT
+    GROUPBOX        "Image",IDC_STATIC,7,41,247,80,WS_GROUP
+    EDITTEXT        IDC_EDIT_W,120,53,61,13,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_EDIT_H,120,71,61,13,ES_AUTOHSCROLL | ES_NUMBER
+    COMBOBOX        IDC_COMBO_BKGND,120,100,128,53,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    RTEXT           "Width:",IDC_STATIC,15,53,102,12,SS_CENTERIMAGE,WS_EX_TRANSPARENT
+    RTEXT           "Height:",IDC_STATIC,15,71,102,12,SS_CENTERIMAGE,WS_EX_TRANSPARENT
+    RTEXT           "Background Content:",IDC_STATIC,15,100,102,12,SS_CENTERIMAGE,WS_EX_TRANSPARENT
+    PUSHBUTTON      "OK",IDOK,261,7,72,13
+    PUSHBUTTON      "Cancel",IDCANCEL,261,25,72,13
+    LTEXT           "pixels",IDC_STATIC,187,55,46,8
+    LTEXT           "pixels",IDC_STATIC,187,72,46,8
+END
+
+IDD_CLR DIALOGEX 0, 0, 331, 190
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Color Picker"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    PUSHBUTTON      "OK",IDOK,258,7,66,14
+    PUSHBUTTON      "Cancel",IDCANCEL,258,24,66,14
+    PUSHBUTTON      "Color Libraries",IDCLRLIB,258,46,66,14,NOT WS_VISIBLE | WS_DISABLED
+    CONTROL         "",IDC_CLRFIELD,"Static",SS_BITMAP | SS_NOTIFY | SS_SUNKEN,7,7,16,14
+    CONTROL         "",IDC_CLRSLID,"Static",SS_BITMAP | SS_NOTIFY | SS_SUNKEN,171,7,16,14
+    CONTROL         "",IDC_CLRCMP,"Static",SS_BITMAP | SS_SUNKEN,191,7,16,14
+    CONTROL         "H:",IDC_RB_H,"Button",BS_AUTORADIOBUTTON | WS_GROUP,197,70,23,10
+    CONTROL         "S:",IDC_RB_S,"Button",BS_AUTORADIOBUTTON,197,86,23,10
+    CONTROL         "V:",IDC_RB_V,"Button",BS_AUTORADIOBUTTON,197,102,23,10
+    CONTROL         "R:",IDC_RB_R,"Button",BS_AUTORADIOBUTTON,198,121,23,10
+    CONTROL         "G:",IDC_RB_G,"Button",BS_AUTORADIOBUTTON,198,137,23,10
+    CONTROL         "B:",IDC_RB_B,"Button",BS_AUTORADIOBUTTON,198,153,23,10
+    CONTROL         "L:",IDC_RB_L,"Button",BS_AUTORADIOBUTTON | NOT WS_VISIBLE | WS_DISABLED,268,70,22,10
+    CONTROL         "a:",IDC_RB_A,"Button",BS_AUTORADIOBUTTON | NOT WS_VISIBLE | WS_DISABLED,268,86,23,10
+    CONTROL         "b:",IDC_RB_LAB,"Button",BS_AUTORADIOBUTTON | NOT WS_VISIBLE | WS_DISABLED,268,102,23,10
+    EDITTEXT        IDC_V_H,223,68,25,14,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_V_S,223,84,25,14,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_V_V,223,100,25,14,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_V_R,223,119,25,14,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_V_G,223,135,25,14,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_V_B,223,151,25,14,ES_AUTOHSCROLL | ES_NUMBER
+    RTEXT           "#",IDC_STATIC,192,170,12,12,NOT WS_VISIBLE
+    EDITTEXT        IDC_V_HEX,207,168,41,14,ES_AUTOHSCROLL | ES_NUMBER | NOT WS_VISIBLE
+    EDITTEXT        IDC_V_L,294,68,25,14,ES_AUTOHSCROLL | ES_NUMBER | NOT WS_VISIBLE | WS_DISABLED
+    EDITTEXT        IDC_V_A,294,84,25,14,ES_AUTOHSCROLL | ES_NUMBER | NOT WS_VISIBLE | WS_DISABLED
+    EDITTEXT        IDC_V_LAB,294,100,25,14,ES_AUTOHSCROLL | ES_NUMBER | NOT WS_VISIBLE | WS_DISABLED
+    RTEXT           "C:",IDC_STATIC,273,121,16,8
+    RTEXT           "M:",IDC_STATIC,274,137,16,8
+    RTEXT           "Y:",IDC_STATIC,273,153,16,8
+    RTEXT           "K:",IDC_STATIC,273,169,16,8
+    EDITTEXT        IDC_V_C,294,119,25,14,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_V_M,294,135,25,14,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_V_Y,294,151,25,14,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_V_K,294,167,25,14,ES_AUTOHSCROLL | ES_NUMBER
+END
+
+IDD_RES DIALOGEX 0, 0, 265, 198
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Image Resize"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    PUSHBUTTON      "Resize Dimensions",IDOK_RES,191,11,66,14
+    PUSHBUTTON      "Cancel",IDCANCEL,191,169,66,14
+    PUSHBUTTON      "Auto...",IDAUTO,191,124,66,14,NOT WS_VISIBLE | WS_DISABLED
+    GROUPBOX        "Pixel Dimensions",IDC_STATIC,7,8,174,59,0,WS_EX_TRANSPARENT
+    RTEXT           "Width:",IDC_STATIC,14,25,33,9
+    RTEXT           "Height:",IDC_STATIC,15,43,32,9
+    EDITTEXT        IDC_EDIT_PXWIDTH,49,24,50,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_PXHEIGHT,49,41,50,13,ES_AUTOHSCROLL
+    GROUPBOX        "Canvas Size",IDC_STATIC,7,73,174,65,0,WS_EX_TRANSPARENT
+    RTEXT           "Width:",IDC_STATIC,13,92,33,9
+    RTEXT           "Height:",IDC_STATIC,15,110,32,9
+    EDITTEXT        IDC_EDIT_WIDTH,49,91,50,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_HEIGHT,49,108,50,13,ES_AUTOHSCROLL
+    CONTROL         "Scale Styles",IDC_CHECK_STYLES,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,155,54,10
+    CONTROL         "Constrain Proportions",IDC_CHECK_CONST,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,99,155,85,10
+    CONTROL         "Resample Image:",IDC_CHECK_RESAMPLE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,170,68,10
+    COMBOBOX        IDC_COMBO_RESAMPLE,76,169,105,96,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "pixels",IDC_STATIC,103,26,38,8
+    LTEXT           "pixels",IDC_STATIC,103,43,38,8
+    LTEXT           "pixels",IDC_STATIC,103,93,38,8
+    LTEXT           "pixels",IDC_STATIC,103,110,38,8
+    PUSHBUTTON      "Resize Canvas",IDOK_CANV,191,77,66,14
+    CONTROL         "",IDC_RADIO1,"Button",BS_AUTORADIOBUTTON | WS_GROUP | WS_TABSTOP,12,17,16,10
+    CONTROL         "",IDC_RADIO2,"Button",BS_AUTORADIOBUTTON | WS_TABSTOP,12,83,16,10
+    PUSHBUTTON      "OK",IDOKI,191,152,66,14
+END
+
+IDD_FIL DIALOGEX 0, 0, 306, 167
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dialog"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    PUSHBUTTON      "OK",IDOK,232,7,67,14
+    PUSHBUTTON      "Cancel",IDCANCEL,232,24,67,14
+    EDITTEXT        IDC_EDIT1,151,51,28,14,ES_CENTER | ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_EDIT2,180,51,28,14,ES_CENTER | ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_EDIT3,209,51,28,14,ES_CENTER | ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_EDIT4,238,51,28,14,ES_CENTER | ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_EDIT5,267,51,28,14,ES_CENTER | ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_EDIT6,151,66,28,14,ES_CENTER | ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_EDIT7,180,66,28,14,ES_CENTER | ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_EDIT8,209,66,28,14,ES_CENTER | ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_EDIT9,238,66,28,14,ES_CENTER | ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_EDIT10,267,66,28,14,ES_CENTER | ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_EDIT11,151,81,28,14,ES_CENTER | ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_EDIT12,180,81,28,14,ES_CENTER | ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_EDIT13,209,81,28,14,ES_CENTER | ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_EDIT14,238,81,28,14,ES_CENTER | ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_EDIT15,267,81,28,14,ES_CENTER | ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_EDIT16,151,96,28,14,ES_CENTER | ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_EDIT17,180,96,28,14,ES_CENTER | ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_EDIT18,209,96,28,14,ES_CENTER | ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_EDIT19,238,96,28,14,ES_CENTER | ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_EDIT20,267,96,28,14,ES_CENTER | ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_EDIT21,151,111,28,14,ES_CENTER | ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_EDIT22,180,111,28,14,ES_CENTER | ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_EDIT23,209,111,28,14,ES_CENTER | ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_EDIT24,238,111,28,14,ES_CENTER | ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_EDIT25,267,111,28,14,ES_CENTER | ES_AUTOHSCROLL | ES_NUMBER
+    GROUPBOX        "Filter Matrix",IDC_STATIC_GROUP,147,38,152,95
+    LTEXT           "Preview:",IDC_STATIC,7,8,136,8
+    LTEXT           "Value:",IDC_STATIC_VALUELABEL,90,136,26,9
+    EDITTEXT        IDC_VALUE,113,134,30,14,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "",IDC_SLIDER,"msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,7,150,136,10
+    LTEXT           "Filter Name",IDC_STATIC_NAME,7,136,73,10
+    CONTROL         "Black and White",IDC_CHECK_BW,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,228,137,66,10
+    CONTROL         "",IDC_THUMB,"Static",SS_BITMAP | SS_NOTIFY | SS_CENTERIMAGE | SS_REALSIZEIMAGE | SS_SUNKEN,7,19,137,113,WS_EX_TRANSPARENT
+    PUSHBUTTON      "Preview",IDC_PREVIEW,151,134,67,14,WS_DISABLED
+    CONTROL         "Alpha Channel",IDC_CHECK_BWA,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,228,149,62,10
+END
+
+IDD_IMG DIALOGEX 0, 0, 186, 95
+STYLE DS_SETFONT | DS_FIXEDSYS | DS_CENTER | WS_POPUP | WS_BORDER
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_NEW, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 333
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 121
+    END
+
+    IDD_CLR, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 324
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 182
+    END
+
+    IDD_RES, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 257
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 191
+    END
+
+    IDD_FIL, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 299
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 160
+    END
+
+    IDD_IMG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 179
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 88
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+#endif    // Polish resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

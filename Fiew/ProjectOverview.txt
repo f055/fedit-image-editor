@@ -1,0 +1,30 @@
+========================================================================
+    WIN32 APPLICATION : Fedit Project Overview
+========================================================================
+
+Fedit Project Filters:
+|
+`- Header Files:	header files
+|
+`- Resource Files:	icons and images, dialog templates
+|
+`- Source Files:	code that represents the Core of the application
+	|
+	`- Child Core:		code that represents MDI child windows
+	|
+	`- En Core:			code that represents accessing compressed archives
+	|
+	`- Hard Core:		code that represents the very basic data structures
+	|
+	`- Mini Core:		code that represents file browsing and addition display functionality
+	|
+	`- Soft Core:		code that represents the whole interface either in graphic display mode
+	|		|			or api controls and dialogs
+	|		|
+	|		`- DialogHelpers:	code that represents dialog helper objects
+	|
+	`- Toolw Core:		code that represents Tool Windows functionality
+			|
+			`- Tools:			code that represents all Control Center Tools
+			|
+			`- ToolwBox:		code that represents particular Tool Window boxes
